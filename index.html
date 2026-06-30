@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Mis Tareas</h1>
+        
+        <div id="notificacion" class="oculto">¡Tarea procesada con éxito!</div>
+
+        <form id="formulario-tarea">
+            <input type="text" id="input-descripcion" placeholder="Ej: Comprar harina para galletas..." required>
+            <input type="number" id="input-tiempo" placeholder="Segundos para límite (ej: 60)" required>
+            <button type="submit">Agregar Tarea</button>
+            <small id="contador-caracteres">Caracteres: 0</small>
+        </form>
+
+        <div class="acciones-api">
+            <button id="btn-cargar-api">Cargar Tareas desde API</button>
+        </div>
+
+        <ul id="lista-tareas"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
